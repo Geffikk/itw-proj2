@@ -1,0 +1,540 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Pre plynuly prechod */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Montserrat;
+}
+
+/* Vyplnenie bielich pasov od iPad rozlisenia nizsie */
+@media all and (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* posun kontextu */
+div.content {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Nastavenie pozadia */
+.pozadie {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/boris-stefanik-wxJscL5ZzDA-unsplash.jpg);
+  background-color: #777777;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* LOGO */
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 70px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+/* Make fixed navigation bar */
+nav{
+  background: #3D3D3D;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
+  font-family: "Century Gothic";
+}
+
+/* Prisposobenie rozloženia na menšie rozlíšenie */
+@media all and (max-width: 768px) {
+  label.logo{
+    padding: 0px 3vh;
+  }
+
+  nav{
+    background: #3D3D3D;
+    position: sticky;
+    top: 0;
+    height: 210px;
+  }
+
+  nav ul{
+    margin-right: 3vh;
+    float: left;
+    padding-left: 1.5vh;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+  }
+}
+
+a.active:hover {
+  background-color: firebrick;
+}
+
+a.active:hover {
+  display: block
+}
+
+/* 1.Sekcia */
+#About{
+}
+
+.zakladne_informacie {
+  text-align: center;
+  font-family: "Century Gothic";
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  font-size: 68px;
+  color: white;
+  font-family: "Century Gothic";
+}
+
+/* Display image and name in one line */
+.display{
+  display: flex;
+}
+
+#name {
+  text-transform: uppercase;
+  letter-spacing: 17px;
+  font-size: 60px;
+  color: white;
+  font-family: "Century Gothic";
+  margin-top: 1vh;
+}
+
+.img_uvod {
+  width: 35%;
+  height: 35%;
+  padding: 20px;
+  border-radius: 50px;
+  float: left;
+  margin-left: 7vh;
+}
+
+.adresa {
+  text-transform: uppercase;
+  margin-left: 84vh;
+  letter-spacing: 0;
+  margin-top: -40vh;
+  text-align: left;
+}
+
+.udaje{
+  text-align: left;
+  margin-right: 10vh;
+  margin-left: 84vh;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  box-sizing: border-box;
+  font-weight: lighter;
+}
+
+.base_sekcie {
+  margin-left: 25vh;
+  margin-right: 25vh;
+  font-family: "Century Gothic";
+}
+
+/* Uprava rozlozenia */
+@media all and (max-width: 1290px){
+  .display{
+    display: block;
+    margin-right: 5vh;
+  }
+
+  #name {
+    letter-spacing: 11px;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-right: 23vh;
+    text-align: left;
+  }
+
+  .adresa {
+    margin-left: 1vh;
+    letter-spacing: 0;
+    margin-top: 0;
+    text-align: left;
+  }
+
+  .udaje{
+    text-align: left;
+    margin-left: 0;
+  }
+
+  /* Odialenie stlpcov pri vzdelani */
+  .base_sekcie {
+    margin-left: 7vh;
+    margin-right: 7vh;
+  }
+
+  .img_uvod {
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+    margin-left: 0;
+  }
+}
+
+/* iPad rozlozenie */
+@media all and (max-width: 1024px) {
+
+  #name {
+    text-align: left;
+    margin-left: 1vh;
+  }
+
+  .zakladne_informacie {
+    margin-left: 7vh;
+    margin-right: 13vh;
+  }
+
+  .udaje{
+    margin-right: 1vh;
+    margin-left: 1vh;
+  }
+}
+
+/* Fixed bug s menom pri zmensovani rozlisenia */
+@media all and (max-width: 974px) {
+  #name{
+    margin-right: 50vh;
+  }
+}
+
+/* Clasic phone */
+@media all and (max-width: 800px) {
+
+  .udaje {
+    text-align: center;
+  }
+
+  .adresa {
+    text-align: center;
+  }
+
+  #name {
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-right: 0vh;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-left: 8px;
+  }
+
+  /* Odialenie stlpcov pri vzdelani */
+  .base_sekcie {
+    margin-left: 3vh;
+    margin-right: 3vh;
+  }
+
+  .zakladne_informacie {
+    font-size: 15px;
+    margin-left: 1.7vh;
+    margin-right: 1.7vh;
+  }
+
+  .img_uvod {
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+    margin-left: 3vh;
+  }
+
+}
+
+/* iPhone 5SE */
+@media all and (max-width:320px) {
+
+  /* Odialenie stlpcov pri vzdelani */
+  .base_sekcie {
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
+  }
+
+  nav{
+    height: 150px;
+  }
+
+  nav ul{
+    float: left;
+    margin-right: 20px;
+  }
+
+  nav ul li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 3px;
+  }
+
+  nav ul li a{
+    color: white;
+    font-size: 13px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+/* 2. Sekcia */
+#Education {}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 45px;
+}
+
+.nadpis {
+  font-size: 30px;
+}
+
+.podnadpis {
+  font-size: 20px;
+  color: #888888;
+}
+
+.text_white {
+  font-size: 18px;
+  padding-top: 20px;
+}
+
+.datum{
+  font-size: 20px;
+  color: #2C1C07;
+  float: right;
+  position: relative;
+  margin-top: -7vh;
+}
+
+@media all and (max-width: 1100px) {
+  .datum{
+    font-size: 20px;
+    color: #2C1C07;
+    float: none;
+    position: relative;
+    margin-top: 0vh;
+  }
+}
+
+.img-fluid {
+  width: 20%;
+  height: 20%;
+  padding-top: 3vh;
+  padding-bottom: 10vh;
+}
+
+/* Resize jedneho obrazku */
+.img-fluid-resize{
+  width: 15%;
+  height: 15%;
+}
+
+/* 3. Sekcia */
+#Skills{
+}
+
+h3 {
+  padding-top: 7vh;
+  font-size: 40px;
+  color: white;
+}
+
+.text {
+  padding-bottom: 4vh;
+  color: white;
+  font-size: 25px;
+}
+
+.img-logo-icons-inline {
+  display: flex;
+  width: 50%;
+  height: 70%;
+  padding-top: 3vh;
+}
+
+/* Obrazky sa zobrazia pod sebou */
+@media all and (max-width: 800px) {
+  .img-logo-icons-inline {
+    display: inline-block;
+    justify-content: center;
+    width: 30%;
+    height: 40%;
+    padding-top: 3vh;
+  }
+}
+
+.img-logo-icons {
+   width: 55%;
+   height: 68%;
+   padding-top: 3vh;
+ }
+
+.img-logo-icons-resize {
+  width: 44%;
+}
+
+.img-logo-icons-resize2 {
+  width: 50%;
+
+}
+
+.smaller {
+  padding-top: 10vh;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* 4. Sekcia */
+#Experience{}
+
+.brown {
+  background: #2C1C07;
+  margin-right: -25vh;
+  margin-left: -25vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.nadpis2 {
+  font-size: 30px;
+  color: white;
+  margin-right: 25vh;
+  margin-left: 25vh;
+}
+
+.podnadpis2 {
+  font-size: 20px;
+  color: #636363;
+  margin-right: 25vh;
+  margin-left: 25vh;
+}
+
+.text_white2 {
+  color: #D3D3D3;
+  font-size: 18px;
+  padding-top: 20px;
+  margin-right: 25vh;
+  margin-left: 25vh;
+  letter-spacing: 2px;
+}
+
+/* 5.Sekcia */
+#Interest{}
+
+.text_no_padding {
+  display: flex;
+  text-transform: uppercase;
+  padding-bottom: 10vh;
+  color: white;
+  font-size: 23px;
+}
+
+#textjs {
+  font-size: 15px;
+  color: white;
+}
+.no-padding {
+  margin-top: -11.9vh;
+  width: 15%;
+  height: 15%;
+}
+
+/* Uprava rozlozenia textu */
+@media all and (max-width: 1280px) {
+  .text_no_padding {
+    display: flex;
+    text-transform: uppercase;
+    padding-bottom: 10vh;
+    color: white;
+    font-size: 19px;
+  }
+
+  #textjs {
+    font-size: 15px;
+    color: white;
+  }
+
+  .no-padding {
+    margin-top: -10vh;
+    width: 15%;
+    height: 15%;
+  }
+}
+
+/* Uprava rozlozenia textu */
+@media all and (max-width: 1024px) {
+  .text_no_padding {
+    display: block;
+    text-transform: uppercase;
+    padding-bottom: 10vh;
+    color: white;
+    font-size: 15px;
+  }
+
+  #textjs {
+    font-size: 15px;
+    color: white;
+  }
+
+  .no-padding {
+    margin-top: -4vh;
+    width: 15%;
+    height: 15%;
+  }
+
+  .img-logo-icons {
+    display: none;
+  }
+}

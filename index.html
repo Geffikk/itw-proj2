@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="cs">
+
+
+<head>
+  <meta charset="iso-8599-2">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>My Profile</title>
+  <link rel="stylesheet" type="text/css" href="css/proj2.css" />
+</head>
+
+<body>
+   <div class="container">
+       <nav>
+         <label class="logo">PROFILE WEB</label>
+         <ul>
+           <li><a class="active" href="#About">About</a></li>
+           <li><a class="active" href="#Education">Education</a></li>
+           <li><a class="active" href="#Skills">Skills</a></li>
+           <li><a class="active" href="#Experience">Experience</a></li>
+           <li><a class="active" href="#Interest">Interests</a></li>
+         </ul>
+       </nav>
+
+       <section id="About">
+         <div class="pozadie">
+           <div class="content">
+               <div class="zakladne_informacie">
+                 <div class="display">
+                   <img src="img/IMG_4910.JPG" class="img_uvod">
+                   <div id="name"></div>
+                 </div>
+                 <script>
+                   var j=0,name;
+                   name = "Maros Geffert";
+
+                   function typing1() {
+                     if (j < name.length) {
+                       document.getElementById("name").innerHTML += name.charAt(j);
+                       j++;
+                       setTimeout(typing1, 200);
+                     }
+                   }
+                   typing1();
+                 </script>
+
+                 <div class="adresa">
+                 <p>Sturova 69, Nizny Mirosov, +421908 666 666, maros.geffert@gmail.com</p>
+                 </div>
+                 <div class="udaje">
+                   <p>
+                     I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews.
+                     Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.
+                   </p>
+                 </div>
+               </div>
+             </div>
+         </div>
+       </section>
+
+       <section id="Education">
+         <div class="content">
+           <div class="base_sekcie">
+            <h2 >EDUCATION</h2>
+            <p class="nadpis">Vysoke uceni technicke v Brne</p>
+             <p class="podnadpis">Fakulta informacnych technologii</p>
+             <p class="datum">September 2016 - August 2020</p>
+             <p><img src="img/vut_brno_01.jpg" alt="Instant Image" class="img-fluid"></p>
+
+             <p class="skola">Gymnaziu Leonarda Stockela</p>
+             <p class="fakulta">Gymnazium</p>
+             <p class="datum">September 2012 - Jun 2016</p>
+             <p><img src="img/unnamed.jpg" alt="Instant Image" class="img-fluid img-fluid-resize"></p>
+           </div>
+         </div>
+       </section>
+
+
+       <section id="Skills" class="pozadie">
+         <div class="content">
+           <div class="base_sekcie">
+            <h3>PROGRAMING AND COMPUTER SKILLS</h3>
+             <div class="text">Languages</div>
+             <div class="img-logo-icons-inline">
+               <p><img src="img/c-programming.png" class="img-logo-icons"></p>
+               <p><img src="img/java.png" class="img-logo-icons img-logo-icons-resize"></p>
+               <p><img src="img/php.png" class="img-logo-icons img-logo-icons-resize2"></p>
+               <p><img src="img/cpp.png" class="img-logo-icons"></p>
+             </div>
+             <div class="text smaller"> I have also a little skills in with Web design, databases and with typhography.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Nulla vel metus quis sapien pretium viverra id vitae odio.
+               Fusce ac justo quam. Ut ex tortor, dapibus sit amet semper eget, semper ut purus.
+               Vestibulum volutpat vulputate lacus tincidunt hendrerit.
+               Sed sit amet sollicitudin nulla. Ut eleifend vel quam vel gravida.
+             </div>
+           </div>
+         </div>
+       </section>
+
+       <section id="Experience" class="">
+         <div class="content">
+           <div class="base_sekcie">
+            <h2>Experience</h2>
+             <div class="brown">
+             <div class="nadpis2">Java Developer</div>
+             <div class="podnadpis2">2 Years</div>
+             <div class="text_white2">Cras quis enim ac velit eleifend porttitor eget ac ante.
+               Proin id aliquam urna, rhoncus luctus lectus. Quisque lobortis pharetra enim, vel faucibus odio suscipit sed.
+               Nam laoreet, nibh eu bibendum convallis, elit lorem euismod ipsum, at euismod purus ante non enim.
+               Phasellus cursus molestie eros vitae tincidunt. Aliquam ut nunc leo. Quisque in pretium mi.
+               Pellentesque vestibulum id dolor a auctor.
+             </div>
+             </div>
+             <br>
+             <br>
+             <div class="brown">
+             <div class="nadpis2">Tester</div>
+             <div class="podnadpis2">3 Years (alongside school)</div>
+             <div class="text_white2">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+               Duis ornare aliquam semper. Nulla id laoreet lectus.
+               Pellentesque tellus neque, porta accumsan nisi non, egestas ultricies nunc.
+               In efficitur augue ac elit bibendum, eget facilisis nisi consectetur.
+               Ut sagittis nisi at mollis porta.
+               Aliquam efficitur, eros ac ultrices eleifend, arcu felis suscipit sem, vitae pretium sem orci quis arcu.
+               Vestibulum non metus ut est varius molestie.
+               Suspendisse in erat sed sapien consectetur maximus.
+               Suspendisse bibendum leo quis elit blandit, sed hendrerit ex vehicula.
+             </div>
+             </div>
+             <br>
+             <br>
+             <div class="brown">
+             <div class="nadpis2">Frontend Developer</div>
+             <div class="podnadpis2">Still working</div>
+             <div class="text_white2">Donec vulputate nisl eu ultrices malesuada.
+               Quisque eget congue libero, quis sodales mauris. Ut eu dui dui.
+               Suspendisse eget tortor lobortis, volutpat nisi non, condimentum orci.
+               Maecenas volutpat auctor rhoncus. Vivamus sed tortor luctus, sagittis justo vitae, vestibulum enim.
+               Integer mauris nulla, eleifend vitae libero at, egestas pulvinar mi.
+             </div>
+             </div>
+           </div>
+         </div>
+       </section>
+
+     <section id="Interest" class="pozadie">
+       <div class="content">
+         <div class="base_sekcie">
+           <h3>INTERESTS</h3>
+           <div class="text smaller">
+             <br>
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+             Nulla vel metus quis sapien pretium viverra id vitae odio.
+             Fusce ac justo quam. Ut ex tortor, dapibus sit amet semper eget, semper ut purus.
+             Vestibulum volutpat vulputate lacus tincidunt hendrerit.
+             Sed sit amet sollicitudin nulla. Ut eleifend vel quam vel gravida.
+           </div>
+             <br>
+             <br>
+
+           <div class="text_no_padding">
+             My greatest interest ist <img src="img/pngguru.com.png" class="img-logo-icons no-padding"> &nbsp;&nbsp; <div id="textjs"></div>
+           </div>
+
+           <script>
+             var i=0,textjs;
+             textjs = "Web Desgin and make jquery script.";
+
+             function typing() {
+               if (i < textjs.length) {
+                 document.getElementById("textjs").innerHTML += textjs.charAt(i);
+                 i++;
+                 setTimeout(typing, 80);
+               }
+             }
+             typing();
+           </script>
+
+         </div>
+       </div>
+     </section>
+
+    </div>
+</body>
+
+
+
+</html>
+
